@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #1e3a8a;
+  --light-blue: #60a5fa;
+  --white: #f9fafb;
+  --gray: #e5e7eb;
+  --yellow: #f59e0b;
+  --orange: #fb923c;
+  --border-radius: 10px;
+}
+
+.divider {
+  padding: 20px 0;
+}
+
+body {
+  background-color: var(--dark-blue);
+  text-align: center;
+  color: var(--white);
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  margin: 15px 0 20px;
+  font-size: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: var(--white);
+  background-color: var(--golden-yellow);
+  background-image: linear-gradient(var(--yellow), var(--orange));
+  border: none;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+.btn:hover {
+  background-color: var(--orange);
+}
+
+.rules-container {
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--light-blue);
+  background-color: var(--white);
+  color: var(--dark-blue);
+  max-width: 500px;
+  cursor: pointer;
+}
+
+.rules-container ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.rules-container p {
+  margin: 10px 0;
+  text-align: left;
+}
+
+@media (min-width: 760px) {
+  .rules-container {
+    width: 60%;
+  }
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  font-size: 1.5rem;
+}
+
+.score {
+  font-weight: 500;
+}
+
+.results-container {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  min-height: 150px;
+}
+
+#winner-msg {
+  margin-top: 25px;
+}
+
+#reset-game-btn {
+  display: none;
+  margin: 20px auto;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Let's play Rock, Paper, Scissors!</h1>
+    <main>
+      <div class="divider"></div>
+
+      <div class="score-container">
+        <strong>Il Tuo punteggio: <span class="score" id="player-score">0</span></strong>
+        <strong>Punteggio del Computer: <span class="score" id="computer-score">0</span></strong>
+      </div> <!--end score-container-->
+
+      <section class="options-container">
+        <h2>Scegli:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Sasso</button>
+          <button id="paper-btn" class="btn">Carta</button>
+          <button id="scissors-btn" class="btn">Forbici</button>
+        </div> <!--end btn-container-->
+      </section>
+
+      <div class="divider"></div>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Giochi Ancora?</button>
+      </div> <!--end results-container-->
+
+      <div class="divider"></div>
+
+      <details class="rules-container">
+        <summary>Regole del Gioco</summary>
+
+        <p>Giocherai contro il Computer.</p>
+        <p>Dovrai scegliere tra Sasso, Carta e Forbici.</p>
+        <p>Il primo che raggiunge i tre punti, Vince!</p>
+
+        <p>Ecco le regole per ottenere un punto nel gioco:</p>
+        <ul>
+          <li>Sasso batte Forbici</li>
+          <li>Forbici batte Carta</li>
+          <li>Carta batte Sasso</li>
+        </ul>
+        <p>
+          Se il giocatore e il computer scelgono la stessa opzione (Es. Carta e
+          Carta), nessuno ottiene il punto.
+        </p>
+      </details> <!--end details con summery-->
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
